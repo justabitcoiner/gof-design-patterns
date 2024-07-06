@@ -28,7 +28,11 @@ class Logistic:
         transport = self.create_transport()
         transport.deliver()
 
-    def create_transport(self) -> Transport:
+    def do_something(self):
+        transport = self.create_transport()
+        # Do something
+
+    def create_transport():
         pass
 
 
@@ -56,7 +60,6 @@ def main():
         logistic = SeaLogistic()
     elif method == "air":
         logistic = AirLogistic()
-
     logistic.plan_delivery()
 
 
